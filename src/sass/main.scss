@@ -1,0 +1,138 @@
+//
+// .container {
+//
+//   max-width: 600px;
+//   margin: 0 auto;
+//
+//
+//   header {
+//     width: 100%;
+//     h1 {}
+//   }
+//
+//   nav {
+//     width: 100%;
+//     ul {
+//       margin: 0;
+//       padding: 0;
+//       li {
+//         list-style: none;
+//         display: inline-block;
+//         a{
+//           text-decoration: none;
+//           background-color: black;
+//           color: white;
+//           padding: 3px 10px;
+//           margin-right: 10px;
+//         }
+//       }
+//     }
+//   }
+//
+//   section {
+//     width: 100%;
+//     overflow: auto;
+//     background-color: pink;
+//     color: purple;
+//
+//     aside {
+//       float: right;
+//       width: 25%;
+//       padding-left: 2.5%;
+//
+//       a{
+//         color: white;
+//       }
+//     }
+//     article {
+//       float: left;
+//       width: 60%;
+//       padding: 0 5%;
+//     }
+//
+//   }
+//
+//   footer {
+//
+//   }
+//
+//
+// }
+//
+// @media screen and (max-width: 400px) {
+//
+//   body {
+//     background-color: red;
+//   }
+// }
+
+.container {
+  max-width: 700px;
+  margin: 0 auto; }
+  .container .hamburger {
+    line-height: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3f535a;
+    color: white;
+    padding: 8px;
+    display: none; }
+  .container header {
+    width: 100%; }
+  .container nav {
+    width: 100%; }
+    .container nav.invisible {
+      display: block; }
+    .container nav ul {
+      margin: 0;
+      padding: 0; }
+      .container nav ul li {
+        list-style: none;
+        display: inline-block; }
+        .container nav ul li a {
+          text-decoration: none;
+          background-color: #e0531b;
+          color: white;
+          padding: 3px 10px;
+          margin-right: 10px; }
+  .container section {
+    margin-top: 15px;
+    width: 100%;
+    overflow: auto;
+    background-color: #3f535a;
+    color: white; }
+    .container section aside {
+      float: right;
+      width: 25%;
+      padding: 0 2.5%; }
+      .container section aside a {
+        color: #e0531b; }
+    .container section article {
+      float: left;
+      width: 65%;
+      padding: 0 2.5%; }
+  .container footer {
+    width: 100%; }
+
+@media screen and (max-width: 750px) {
+  body {
+    padding: 0 5%; } }
+
+@media screen and (max-width: 500px) {
+  .container .hamburger {
+    display: block; }
+  .container nav.invisible {
+    display: none; }
+  .container nav li {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px; }
+    .container nav li a {
+      display: block; }
+  .container section article {
+    float: none;
+    width: 95%; }
+  .container section aside {
+    float: none;
+    width: 95%; } }
